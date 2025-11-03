@@ -1,10 +1,115 @@
-# Ignore all data files
+# ====================================================
+# --- PYTHON ---
+# ====================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+MANIFEST
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode and PyCharm
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.out
+*.bak
+*.tmp
+*.swp
+.DS_Store
+
+# ====================================================
+# --- DATA & MODEL FILES ---
+# ====================================================
+# Raw data folders
 data/
 datasets/
+raw_data/
+processed_data/
+temp_data/
+temp/
+
+# Large dataset files
 *.csv
 *.tsv
+*.json
 *.zip
+*.gz
+*.tar
 *.tar.gz
+*.h5
 *.npy
-*.pt
+*.npz
 *.pkl
+*.pt
+*.pth
+*.bin
+
+# Intermediate artifacts
+outputs/
+runs/
+checkpoints/
+models/
+saved_models/
+results/
+experiments/
+
+# ====================================================
+# --- NOTEBOOK OUTPUTS ---
+# ====================================================
+*.nbconvert.ipynb
+*.ipynb~
+
+# ====================================================
+# --- DOCKER ---
+# ====================================================
+# Docker build files
+*.pid
+*.sock
+docker-compose.override.yml
+
+# Docker volumes or cache
+docker-data/
+.docker/
+.cache/
+
+# ====================================================
+# --- ENVIRONMENT & CONFIG ---
+# ====================================================
+# System and local config
+.env.local
+.env.production
+.env.dev
+.env.example
+*.ini
+*.cfg
+*.toml
+
+# ====================================================
+# --- OS / SYSTEM FILES ---
+# ====================================================
+Thumbs.db
+ehthumbs.db
+Icon?
+*.lnk
+desktop.ini

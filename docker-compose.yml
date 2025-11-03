@@ -1,18 +1,12 @@
-version: "3.8"
+version: '3.8'
+
 services:
-  app:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-    container_name: multimodal_app
+  multimodal:
+    build: .
+    container_name: multimodal_pipeline
     volumes:
       - ./src:/app/src
       - ./data:/app/data
-      - ./logs:/app/logs
+    working_dir: /app
+    command: bash
     tty: true
-    stdin_open: true
-    environment:
-      - PYTHONUNBUFFERED=1
-    # uncomment the following if you want to expose Jupyter
-    # ports:
-    #   - "8888:8888"

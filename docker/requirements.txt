@@ -1,0 +1,30 @@
+# Core ML & DL
+torch>=2.0.0
+torchvision
+transformers
+sentencepiece
+
+# Data
+pandas
+numpy
+scikit-learn
+
+# Images & utils
+pillow
+tqdm
+matplotlib
+seaborn
+
+# Experiment & orchestration (optional)
+prefect==2.14.0
+mlflow
+
+# For notebook & dev
+jupyterlab
+
+# HTTP
+requests
+
+# For GCNs (if you later use PyG; comment if not using)
+# torch-geometric and its dependencies are tricky to install in Docker;
+# add later when you pick a base image that matches CUDA.

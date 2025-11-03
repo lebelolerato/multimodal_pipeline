@@ -1,0 +1,10 @@
+# Ignore all data files
+data/
+datasets/
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+*.npy
+*.pt
+*.pkl

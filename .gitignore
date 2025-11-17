@@ -43,7 +43,11 @@ venv.bak/
 # ====================================================
 # Raw data folders
 data/
+<<<<<<< HEAD
 Data2/
+=======
+data2/
+>>>>>>> 340c7e02bb906a968534fcfcfe04d74f4bcfad3a
 datasets/
 raw_data/
 processed_data/
